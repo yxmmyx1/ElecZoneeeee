@@ -1,0 +1,150 @@
+
+.ham-menu {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: -10rem;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu-active {
+  display: block !important;
+}
+
+@media (min-width:600px) {
+  .ham-menu{
+    display: none;
+  }
+  .product{
+    margin-left: 0;
+  }
+
+}
+@media (max-width: 600px){
+    .ham-menu{
+      padding: 0 2rem;
+    }
+    nav{
+        width: 145%;
+    }
+    nav{
+      flex-direction: column;
+      height: auto;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+    nav a{
+      font-size: 25px;
+    }
+    .nav-pofile ul{
+        display: none;
+        width: 100%;
+        
+    }
+    .nav-pofile{
+      margin-left: 2rem;
+    }
+    .nav-pofile ul li{
+      margin: 2rem ;
+      /* border: 1px solid red; */
+    }
+    .nav-pofile .cart{
+      top: -2rem;
+      right: -3rem;
+    }
+    .nav-pofile .cartcount{
+      right: -7rem;
+    }
+    .nav .ham-menu{
+      display: block;
+    }
+    html{
+      width: auto;
+      height: auto;
+    }
+    section{
+      width: 145%;
+    }
+    .Container{
+      height: 130rem;
+      width: 145%;
+      padding-top:10rem;
+      flex-direction: column;
+    }
+    .Search-bar{
+      left: 4rem;
+      margin-bottom: 0;
+    }
+   
+    .sidebar{
+      margin-top: 0;
+      margin-bottom: 3rem;
+      font-size: 23px;
+      font-weight: 300;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      padding-left: 0;
+      margin-left: 2rem;
+      width: 90%;
+      grid-gap:40px
+      
+    }
+    .sidebar-items{
+      
+      width: 90%;
+      height: 100%;
+      margin-left: 0rem;
+      
+    }
+    .product{
+      margin-top: 0;
+      width: 90%;
+      margin-left: auto;
+     margin-right: auto;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap:30px
+    }
+    .modal-page{
+    min-width: 30px;
+    max-width: 30rem;
+    max-height: 100rem;
+    }
+    .modaldes-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .modaldesc-img{
+      width: 25rem;
+    height: 25rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    }
+    .btnc{
+      width: 40px;
+      height: 40px;
+    }
+    .cartlist-right{
+      margin-left: 1rem;
+    }
+}
